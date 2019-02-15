@@ -1,0 +1,22 @@
+{
+  "name": "auth-server",
+  "version": "1.0.0",
+  "description": "example : gerrit http auth server",
+  "main": "index.js",
+  "scripts": {
+    "start":"node dist/express-server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Sol Zhang",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "log4js": "^3.0.6",
+    "log4js-extend": "^0.2.1"
+  },
+  "devDependencies": {
+    "@types/express": "^4.16.0",
+    "@types/node": "^10.12.18",
+    "typescript": "^3.2.2"
+  }
+}
