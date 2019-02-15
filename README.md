@@ -1,6 +1,8 @@
 # gerrit-with-customer-http-auth
 
-Regarding Gerrit's user http authentication, we can do it in a custom way, that is, we can implement verification by ourselves, so that the source of user authentication information can be a database, or you can try the WebService, or other API.
+Regarding Gerrit's user http authentication, we can do it in a customr way? 
+
+we can implement verification by ourselves, so that the source of user authentication information can be a database, or you can try the WebService, or other API.
 
 The official http authentication method example uses .htpassword, here we use our own auth server
 
