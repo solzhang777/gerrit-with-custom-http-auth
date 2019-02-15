@@ -15,19 +15,18 @@ The specific configuration of nginx is as follows:
 ```java
 server {
     listen 8000;
+    server_name  192.168.1.100;
 	
-    location /gerrit {
-        proxy_pass  http://127.0.0.1:7000/login;
+    location / {
+        proxy_pass  http://192.168.1.100:7000;
         proxy_set_header  X-Forwarded-For $remote_addr;
         proxy_set_header  Host $host;
-        auth_basic "Gerrit2 Code Review";
-        proxy_set_header  Authorization $http_authorization;
         auth_request /gerrit/auth;
     }
 
     location /gerrit/auth {
         internal;
-        proxy_pass http://127.0.0.1:3000/gerrit/auth;
+        proxy_pass http://192.168.1.100:3000/gerrit/login;
         proxy_pass_request_body off;
         proxy_set_header X-Forwarded-For $remote_addr;
         proxy_set_header Host $host;
