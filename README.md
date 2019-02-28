@@ -1,4 +1,4 @@
-# gerrit-with-customer-http-auth
+# gerrit-with-custom-http-auth
 
 Regarding Gerrit's user http authentication, we can do it in a customr way? 
 
